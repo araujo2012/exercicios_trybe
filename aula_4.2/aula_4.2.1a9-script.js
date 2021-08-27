@@ -30,7 +30,7 @@ if (media > 20){
 
 /* Utilizando for , descubra qual o maior valor contido no array e imprima-o; */
 console.log('Exercicio 4.2.5');
-let max = 0;
+let max = -Infinity;
 for(i of numbers){
     if (i > max){
         max = i;
@@ -40,7 +40,7 @@ console.log(max);
 
 /* Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: "nenhum valor ímpar encontrado"; */
 console.log('Exercicio 4.2.6');
-let impar = 0;
+let impar = Infinity;
 for(i of numbers){
     if (i%2==1){
         impar += 1;

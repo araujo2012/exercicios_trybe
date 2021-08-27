@@ -7,18 +7,18 @@ switch (peca){
     case 'torre':
         console.log('Movimenta para os lados quantas casas quiser');
         break
-        case 'bispo':
+    case 'bispo':
         console.log('Movimenta na diagonal quantas casas quiser');
         break
-        case 'cavalo':
+    case 'cavalo':
         console.log('Movimenta uma casa na diagonal e uma casa na lateral');
         break
-        case 'rainha':
+    case 'rainha':
         console.log('Movimenta igual a torre e bispo');
         break
-        case 'rei':
+    case 'rei':
         console.log('Movimenta apenas uma casa em qualquer direcao');
         break
-        default:
+    default:
         console.log(peca)
 }
