@@ -44,10 +44,10 @@ if(n%2==1){
         soma = '';
         espaco = '';
         if(i%2==0){
-            for(j=((n-1)/2)-i/2;j>0;j-=1){
+            for(j = ((n-1)/2) - i/2;j>0;j-=1){
                 espaco += ' ';
             }
-            soma = espaco + asterisco;
+            soma = espaco + asterisco + espaco;
             console.log(soma);
         }
     }
@@ -56,22 +56,53 @@ if(n%2==1){
 }
 
 /* Faça uma pirâmide com n asteriscos de base que seja vazia no meio. Assuma que o valor de n será sempre ímpar */
+console.log('exercicio 5');
+asterisco = '';
+let k = 1;
+if(n%2==1){
+    for(i=0;i<n;i+=1){
+        asterisco = '';
+        for (j=0;j<k;j+=1){
+            if(k==n){
+                asterisco += '*';
+            }else{
+            if ((j==0)||(j==k-1)){
+                asterisco += '*';
+            }else{
+                asterisco += ' ';
+            }}
+        }
+        k += 1;
+        soma = '';
+        espaco = '';
+        if(i%2==0){
+            for(j = ((n-1)/2) - i/2;j>0;j-=1){
+                espaco += ' ';
+            }
+            soma = espaco + asterisco + espaco;
+            console.log(soma);
+        }
+    }
+}else{
+    console.log('Valor de n par. erro na piramide');
+}
 
 /* Faça um programa que diz se um número definido numa variável é primo ou não. */
 console.log('exercicio 6');
-let primo = 93;
+let primo = 3;
 console.log('O numero', primo, 'e primo?');
 let primos = [2];
 let z = 0;
 for(i=3;i<=primo;i+=1){
     z = 0;
-    for(j of primos){
+    for(j of primos){ 
         if(i%j==0){
             z = 1;
+            break;
         }
     }
     if(z==0){
-        primos += [i];
+        primos.push(i);
     }
 }
 z = 0;
