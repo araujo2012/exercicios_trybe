@@ -46,3 +46,13 @@ for (index = 0; index < 10; index += 1) {
 for (index = 0; index < 3; index += 1) {
     main.appendChild(newChild('h3', 'texto', ''));
 }
+
+//Adicione a classe title na tag h1 criada;
+let firstH1 = document.querySelector('h1');
+firstH1.className = ;
+
+//Adicione a classe description nas 3 tags h3 criadas;
+//Remova a section criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() ;
+//Centralize a section criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto da section ;
+//Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
+//Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
