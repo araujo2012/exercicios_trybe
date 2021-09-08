@@ -49,7 +49,19 @@ for (index = 0; index < 3; index += 1) {
 
 //Adicione a classe title na tag h1 criada;
 let firstH1 = document.querySelector('h1');
-firstH1.className = ;
+function highestCount(numbersArray) {
+    let highestNumber = numbersArray.sort((a, b) => a - b).pop();
+    console.log(highestNumber);
+    let highestNumberCount = 1;
+    for (const index in numbersArray) {
+      if (numbersArray[index] === highestNumber) {
+        highestNumberCount += 1;
+      }
+    }
+    return highestNumberCount;
+  }
+
+  console.log([1, 3, 9, 100, 9, 100, 99].sort((a, b) => a-b));
 
 //Adicione a classe description nas 3 tags h3 criadas;
 //Remova a section criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() ;
