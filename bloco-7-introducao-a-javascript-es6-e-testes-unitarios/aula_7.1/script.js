@@ -75,4 +75,3 @@ const fullText = (string) => {
 }
 
 console.log(fullText(changeX('Lucas')));
-
